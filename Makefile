@@ -1,11 +1,10 @@
 .PHONY: build run
 
-IMAGE   := instoll/orca
-USER_ID := `id -u $$USER`
+IMAGE := instoll/orca
 
 build:
 	docker build -t $(IMAGE) .
 
 run:
-	docker run --rm -e HOST_USER_ID=$(USER_ID) $(IMAGE) bash -c "tail -f /dev/null"
+	docker run --rm $(IMAGE) bash -c "tail -f /dev/null"
 

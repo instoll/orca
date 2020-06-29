@@ -1,0 +1,40 @@
+# Wildcard matchers.
+*tmp
+*.db
+*-build
+*.log
+*.pyc
+*.swp
+*.swo
+*~
+
+# Files and directories.
+.DS_Store
+.cache
+.dev
+.dir-locals.el
+.envrc
+.env*
+.idea
+.vagrant
+.vault-token
+.vendor
+.vscode
+build
+bundles
+debug
+debug.test
+gcp.*.json
+node_modules
+token.json
+
+# Only applies to top-level directories.
+/.env
+/nbproject/*
+/data
+/coverage
+
+# Exclude these files.
+!empty
+!.keep
+!.gitkeep

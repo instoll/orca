@@ -72,7 +72,3 @@ ENV TZ       Asia/Tokyo
 
 WORKDIR $HOMEDIR
 
-COPY entrypoint.sh /entrypoint.sh
-
-ENTRYPOINT ["/entrypoint.sh"]
-

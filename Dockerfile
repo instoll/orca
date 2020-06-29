@@ -59,8 +59,8 @@ RUN echo "Installing OS and ORCA dependencies" && \
       echo 'DBENCODING="UTF-8"' > /etc/jma-receipt/db.conf && \
       jma-setup && \
     echo "Snapshot ORCA database" && \
-      sudo -u $USER pg_dump $USER > $HOMEDIR/db-snapshot.sql && \
-      chown $USER:$USER $HOMEDIR/db-snapshot.sql && \
+      sudo -u $USER pg_dump $USER > /db-snapshot.sql && \
+      chown $USER:$USER /db-snapshot.sql && \
     echo "Cleanup" && \
       rm -Rf /tmp/*
 
